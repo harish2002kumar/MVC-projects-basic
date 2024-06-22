@@ -15,7 +15,7 @@ namespace StateMangMVC.Controllers
         }
 
         [HttpPost]
-        public ActionResult Personal(string sname,string address,string contact)
+        public ActionResult Personal(string sname, string address, string contact)
         {
             if (sname == "" || address == "" || contact == "")
             {
@@ -30,7 +30,8 @@ namespace StateMangMVC.Controllers
                 TempData["contact"] = contact;
                 return RedirectToAction("marks");
 
-        }
+            }
 
+        }
     }
 }
