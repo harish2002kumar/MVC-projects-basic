@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    TempData.Keep("age");
+}
+<h2>Index</h2>
+<hr/>
+Language is<b>@TempData.Peek("Language")</b><br />
+AGe is <b>@TempData["age"]</b><br />
+Computer knowlegde is <br />
+<a href="/home/about">About</a>
+<br />
+<b>Welcome @Session["UserName"]</b>
